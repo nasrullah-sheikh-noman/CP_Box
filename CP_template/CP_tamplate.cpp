@@ -1,6 +1,9 @@
 // Starting with the name of Almighty Allah
 // Practice is the only shortcut to improve
 
+#pragma GCC optimize("Ofast")
+#pragma GCC target("avx2")
+#pragma GCC optimize("unroll-loops")
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -89,10 +92,12 @@ int my_rand(int l, int r) {
   return uniform_int_distribution<int>(l, r)(rng);
 }
 
+//==================== SOLVE ====================//
 void solve() {
   
 }
 
+//==================== MAIN ====================//
 int32_t main() {
   ios::sync_with_stdio(false);
   cin.tie(nullptr);
