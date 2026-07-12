@@ -2,8 +2,6 @@
 // Practice is the only shortcut to improve
 
 #pragma GCC optimize("Ofast")
-#pragma GCC target("avx2")
-#pragma GCC optimize("unroll-loops")
 #include <bits/stdc++.h>
 using namespace std;
 
