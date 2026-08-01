@@ -1,8 +1,8 @@
 class Node {
   public: 
     int val;
-    Node* next;
-    Node* prev;
+    Node *next;
+    Node *prev;
   Node(int val) {
     this->val = val;
     this->next = NULL;
