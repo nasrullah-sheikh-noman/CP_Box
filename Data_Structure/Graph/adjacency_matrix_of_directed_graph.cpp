@@ -14,6 +14,6 @@ void solve() {
     for(int j = 0; j < n; j++) {
       cout << v[i][j] << " ";
     }
-    cout << nl;
+    cout << endl;
   }
 }
