@@ -10,7 +10,7 @@ bool valid(int ci, int cj) {
 }
 
 void DFS(int si, int sj) {
-  cout << si << " " << sj << nl;
+  cout << si << " " << sj << endl;
   vis[si][sj] = true;
   for(int i = 0; i < 4; i++) {
     int ci = si + moves[i].first;
