@@ -1,3 +1,6 @@
+vector<int> adj_list[10001];
+bool vis[10001];
+
 void BFS(int src) {
   cout << src << " ";
   vis[src] = true;
