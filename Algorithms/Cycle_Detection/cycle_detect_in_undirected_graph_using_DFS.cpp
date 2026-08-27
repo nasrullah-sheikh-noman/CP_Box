@@ -16,15 +16,15 @@ void dfs(int src) {
 }
 
 void solve() {
-  int e, v;
-  cin >> e >> v;
-  while(v--) {
+  int v, e;
+  cin >> v >> e;
+  while(e--) {
     int a, b;
     cin >> a >> b;
     adj_list[a].push_back(b);
     adj_list[b].push_back(a);
   }
-  for (int i = 0; i < e; i++) {
+  for (int i = 0; i < v; i++) {
     if(!vis[i]) {
       dfs(i);
     }
