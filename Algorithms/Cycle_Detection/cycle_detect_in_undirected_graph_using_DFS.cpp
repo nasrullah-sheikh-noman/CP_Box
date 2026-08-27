@@ -24,6 +24,9 @@ void solve() {
     adj_list[a].push_back(b);
     adj_list[b].push_back(a);
   }
+  memset(vis, false, sizeof(vis));
+  memset(par, -1, sizeof(par));
+  cycle = false;
   for (int i = 0; i < v; i++) {
     if(!vis[i]) {
       dfs(i);
