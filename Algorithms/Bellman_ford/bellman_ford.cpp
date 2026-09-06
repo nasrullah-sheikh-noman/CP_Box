@@ -38,6 +38,6 @@ void solve() {
   dis[0] = 0;
   bellman_ford();
   for (int i = 0; i < n; i++) {
-    cout << i << " -> " << dis[i] << nl;
+    cout << i << " -> " << dis[i] << endl;
   }
 }
