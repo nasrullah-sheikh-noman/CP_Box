@@ -1,23 +1,37 @@
-class myQueue {
+class myStack {
   public:
-    list<int> l;
+    Node *head = NULL;
+    Node *tail = NULL;
+    int cnt = 0;
 
-    void push(int val) {
-      l.push_back(val);
+    void push(int x) {
+      cnt++;
+      Node *newNode = new Node(x);
+      if(head==NULL) {
+        head = newNode;
+        tail = newNode;
+        return;
+      }
+      tail->next = newNode;
+      newNode->prev = tail;
+      tail = newNode;
     }
     void pop() {
-      l.pop_front();
+      cnt--;
+      tail = tail->prev;
+      if(tail==NULL) {
+        head = NULL;
+        return;
+      }
+      tail->next = NULL;
+    }
+    int top() {
+      return tail->val;
     }
     int size() {
-      return l.size();
-    }
-    int front() {
-      return l.front();
-    }
-    int back() {
-      return l.back();
+      return cnt;
     }
     bool empty() {
-      return l.empty();
+      return head == NULL;
     }
 };
