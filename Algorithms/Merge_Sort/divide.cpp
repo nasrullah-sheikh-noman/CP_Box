@@ -1,4 +1,4 @@
-void mergeSort(vector<int> &v, int left, int right) {
+void divide(vector<int> &v, int left, int right) {
   if(left<right) {
     int mid = left + (right - left) / 2;
     mergeSort(v, left, mid);
